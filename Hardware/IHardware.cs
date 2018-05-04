@@ -8,5 +8,8 @@ namespace Hardware
 {
     public interface IHardware
     {
+        string ObtenerNumeroCuenta();
+        void EntregarDinero(decimal monto);
+        void RecibirDinero(decimal monto);
     }
 }
