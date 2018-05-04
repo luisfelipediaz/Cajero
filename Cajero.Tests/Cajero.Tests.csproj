@@ -54,6 +54,24 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Banco\Banco.csproj">
+      <Project>{770709b2-7aed-4c63-8f2c-c1f691a3bc3b}</Project>
+      <Name>Banco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cajero\Cajero.csproj">
+      <Project>{c79a2a97-f953-41b7-9ad4-241c69f6fd8a}</Project>
+      <Name>Cajero</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hardware\Hardware.csproj">
+      <Project>{f8e6d86c-1275-4431-95f1-46fb7c734fef}</Project>
+      <Name>Hardware</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{b322ddb1-4521-446d-bc41-0422d8beab33}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
